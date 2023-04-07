@@ -1,0 +1,44 @@
+--Create a hospital storage database 
+
+CREATE TABLE Hospital_Storage (id INTEGER PRIMARY KEY, Item TEXT, Department TEXT, Cost INTEGER, Use_Frequency INTEGER);
+
+INSERT INTO Hospital_Storage VALUES (1, "Infusion Pump", "Med Surg", 895.00, 1);
+INSERT INTO Hospital_Storage VALUES (2, "Defibrillator", "ED", 2875.00, 4);
+INSERT INTO Hospital_Storage VALUES (3, "Fetal Monitor", "OB/GYN", 4830.00, 14);
+INSERT INTO Hospital_Storage VALUES (4, "Pulse Oximeter", "ICU",79.00, 2);
+INSERT INTO Hospital_Storage VALUES (5, "Laryngoscope", "ED", 13945.00, 7);
+INSERT INTO Hospital_Storage VALUES (6, "Thermometer", "ICU", 45.00, 3);
+INSERT INTO Hospital_Storage VALUES (7, "Infant Incubator", "OB/GYN", 8690.00, 13);
+INSERT INTO Hospital_Storage VALUES (8, "ABG Machine", "ICU", 22591.00, 8);
+INSERT INTO Hospital_Storage VALUES (9, "BiPAP", "ICU", 3000.00, 12);
+INSERT INTO Hospital_Storage VALUES (10, "Suction machine", "MED SURG", 89.00, 6);
+INSERT INTO Hospital_Storage VALUES (11, "Ultrasound Machine", "Imaging", 9750.00, 9);
+INSERT INTO Hospital_Storage VALUES (12, "Bed Scale", "Med Surg", 9999.00, 11);
+INSERT INTO Hospital_Storage VALUES (13, "CPAP Machine", "ICU", 2850.00, 5);
+INSERT INTO Hospital_Storage VALUES (14, "Nitric Oxide Machine", "ICU", 3730.00, 15);
+INSERT INTO Hospital_Storage VALUES (15, "Ortho Drill", "ED", 765.00, 10);
+
+SELECT * FROM Hospital_Storage;
+
+--Display database ordered by frequency of use.
+
+SELECT * FROM Hospital_Storage 
+ORDER BY Use_Frequency asc;
+
+--What is average cost of ICU items?
+SELECT AVG(Cost) "Avg ICU Cost"
+FROM Hospital_Storage
+WHERE Department= "ICU";
+
+--What are the three most used items?
+SELECT Item, Cost, Use_Frequency 
+FROM Hospital_Storage
+ORDER BY Use_Frequency asc
+LIMIT 3;
+
+--What is the least used Item by OB/GYN?
+SELECT Item "Least Used OB/GYN ITEM"
+FROM Hospital_Storage
+WHERE Department= "OB/GYN"
+ORDER BY Use_Frequency desc
+LIMIT 1;
