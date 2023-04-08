@@ -1,0 +1,102 @@
+--Wisconsin COVID-19 Database
+
+CREATE TABLE Wisconsin_COVID19 (id INTEGER PRIMARY KEY, County TEXT, Cases_Last_7_Days REAL, Total_Cases REAL, Deaths_Last_7_Days REAL, Total_Deaths REAL, Total_Positive_Tests_Last_7_Days REAL, Total_Tests_Last_7_Days REAL);
+
+
+INSERT INTO Wisconsin_COVID19 VALUES (1, 'Unallocated', 0, 0, 0, 0, 2, 10);
+INSERT INTO Wisconsin_COVID19 VALUES (2, 'Adams County', 11, 5898, 0, 70, 7, 93);
+INSERT INTO Wisconsin_COVID19 VALUES (3, 'Ashland County', 3, 4189, 0, 43, 2, 68);
+INSERT INTO Wisconsin_COVID19 VALUES (4, 'Barron County', 20, 16215, 0, 157, 9, 81);
+INSERT INTO Wisconsin_COVID19 VALUES (5, 'Bayfield County', 4, 4400, 0, 49, 2, 56);
+INSERT INTO Wisconsin_COVID19 VALUES (6, 'Brown County', 147, 103730, 1, 630, 97, 913);
+INSERT INTO Wisconsin_COVID19 VALUES (7, 'Buffalo County', 3, 4217, 0, 15, 4, 25);
+INSERT INTO Wisconsin_COVID19 VALUES (8, 'Burnett County', 3, 5173, 0, 45, 3, 63);
+INSERT INTO Wisconsin_COVID19 VALUES (9, 'Calumet County', 14, 16981, 0, 138, 3, 91);
+INSERT INTO Wisconsin_COVID19 VALUES (10, 'Chippewa County', 35, 22339, 0, 221, 22, 159);
+INSERT INTO Wisconsin_COVID19 VALUES (11, 'Clark County', 33, 9227, 0, 134, 15, 209);
+INSERT INTO Wisconsin_COVID19 VALUES (12, 'Columbia County', 19, 19775, 0, 149, 42, 266);
+INSERT INTO Wisconsin_COVID19 VALUES (13, 'Crawford County', 14, 5394, 0, 32, 4, 85);
+INSERT INTO Wisconsin_COVID19 VALUES (14, 'Dane County', 394, 181038, 4, 658, 222, 1875);
+INSERT INTO Wisconsin_COVID19 VALUES (15, 'Dodge County', 31, 33239, 1, 381, 40, 572);
+INSERT INTO Wisconsin_COVID19 VALUES (16, 'Door County', 6, 8826, 1, 92, 5, 69);
+INSERT INTO Wisconsin_COVID19 VALUES (17, 'Douglas County', 15, 14548, 0, 95, 18, 158);
+INSERT INTO Wisconsin_COVID19 VALUES (18, 'Dunn County', 12, 15687, 0, 85, 16, 151);
+INSERT INTO Wisconsin_COVID19 VALUES ( 19, 'Eau Claire County', 91, 36944, 0, 215, 51, 380);
+INSERT INTO Wisconsin_COVID19 VALUES (20, 'Florence County', 4, 1363, 0, 17, 4, 13);
+INSERT INTO Wisconsin_COVID19 VALUES (21, 'Fond du Lac County', 80, 39572, 1, 322, 53, 365);
+INSERT INTO Wisconsin_COVID19 VALUES (22, 'Forest County', 5, 3395, 0, 56, 6, 49);
+INSERT INTO Wisconsin_COVID19 VALUES (23, 'Grant County', 25, 15644, 0, 163, 23, 217);
+INSERT INTO Wisconsin_COVID19 VALUES (24, 'Green County', 24, 11767, 0, 65, 17, 157);
+INSERT INTO Wisconsin_COVID19 VALUES (25, 'Green Lake County', 14, 6448, 0, 72, 14, 154);
+INSERT INTO Wisconsin_COVID19 VALUES (26, 'Iowa County', 9, 6954, 0, 35, 20, 329);
+INSERT INTO Wisconsin_COVID19 VALUES (27, 'Iron County', 4, 1841, 0, 50, 2, 31);
+INSERT INTO Wisconsin_COVID19 VALUES (28, 'Jackson County', 2, 6976, 0, 47, 6, 60);
+INSERT INTO Wisconsin_COVID19 VALUES (29, 'Jefferson County', 42, 27105, 1, 272, 38, 294);
+INSERT INTO Wisconsin_COVID19 VALUES (30, 'Juneau County', 14, 9494, 1, 77, 19, 127);
+INSERT INTO Wisconsin_COVID19 VALUES (31, 'Kenosha County', 106, 57076, 3, 726, 100, 961);
+INSERT INTO Wisconsin_COVID19 VALUES (32, 'Kewaunee County', 3, 6853, 0, 71, 3, 51);
+INSERT INTO Wisconsin_COVID19 VALUES (33, 'La Crosse County', 79, 43964, 0, 222, 53, 424);
+INSERT INTO Wisconsin_COVID19 VALUES (34, 'Lafayette County', 14, 4481, 0, 33, 5, 59);
+INSERT INTO Wisconsin_COVID19 VALUES (35, 'Langlade County', 12, 6810, 0, 109, 11, 164);
+INSERT INTO Wisconsin_COVID19 VALUES (36, 'Lincoln County', 13, 9133, 0, 160, 9, 196);
+INSERT INTO Wisconsin_COVID19 VALUES (37, 'Manitowoc County', 47, 25340, 1, 221, 35, 305);
+INSERT INTO Wisconsin_COVID19 VALUES (38, 'Marathon County', 128, 50006, 2, 553, 117, 1367);
+INSERT INTO Wisconsin_COVID19 VALUES (39, 'Marinette County', 20, 14695, 0, 149, 32, 317);
+INSERT INTO Wisconsin_COVID19 VALUES (40, 'Marquette County', 7, 4664, 0, 71, 4, 85);
+INSERT INTO Wisconsin_COVID19 VALUES (41, 'Menominee County', 2, 2433, 0, 16, 4, 75);
+INSERT INTO Wisconsin_COVID19 VALUES (42, 'Milwaukee County', 555, 344153, 4, 2509, 489, 4383);
+INSERT INTO Wisconsin_COVID19 VALUES (43, 'Monroe County', 32, 14889, 0, 116, 8, 245);
+INSERT INTO Wisconsin_COVID19 VALUES (44, 'Oconto County', 17, 13483, 0, 135, 16, 103);
+INSERT INTO Wisconsin_COVID19 VALUES (45, 'Oneida County', 28, 11147, 0, 153, 18, 215);
+INSERT INTO Wisconsin_COVID19 VALUES (46, 'Outagamie County', 85, 64951, 0, 453, 55, 558);
+INSERT INTO Wisconsin_COVID19 VALUES (47, 'Ozaukee County', 41, 28072, 0, 216, 29, 327);
+INSERT INTO Wisconsin_COVID19 VALUES (48, 'Pepin County', 3, 2313, 0, 20, 1, 8);
+INSERT INTO Wisconsin_COVID19 VALUES (49, 'Pierce County', 14, 13622, 0, 80, 10, 127);
+INSERT INTO Wisconsin_COVID19 VALUES (50, 'Polk County', 20, 15255, 1, 133, 21, 184);
+INSERT INTO Wisconsin_COVID19 VALUES (51, 'Portage County', 61, 23085, 0, 179, 49, 413);
+INSERT INTO Wisconsin_COVID19 VALUES (52, 'Price County', 12, 4129, 0, 43, 12, 70);
+INSERT INTO Wisconsin_COVID19 VALUES (53, 'Racine County', 114, 71732, 0, 762, 69, 621);
+INSERT INTO Wisconsin_COVID19 VALUES (54, 'Richland County', 17, 5048, 0, 57, 8, 300);
+INSERT INTO Wisconsin_COVID19 VALUES (55, 'Rock County', 114, 55905, 1, 467, 70, 763);
+INSERT INTO Wisconsin_COVID19 VALUES (56, 'Rusk County', 13, 4223, 1, 64, 7, 108);
+INSERT INTO Wisconsin_COVID19 VALUES (57, 'St. Croix County', 62, 31164, 1, 170, 36, 318);
+INSERT INTO Wisconsin_COVID19 VALUES (58, 'Sauk County', 55, 21169, 0, 168, 38, 428);
+INSERT INTO Wisconsin_COVID19 VALUES (59, 'Sawyer County', 1, 6076, 0, 71, 6, 72);
+INSERT INTO Wisconsin_COVID19 VALUES (60, 'Shawano County', 10, 14419, 0, 166, 14, 149);
+INSERT INTO Wisconsin_COVID19 VALUES (61, 'Sheboygan County', 49, 39756, 1, 366, 29, 287);
+INSERT INTO Wisconsin_COVID19 VALUES (62, 'Taylor County', 7, 5850, 0, 83, 11, 81);
+INSERT INTO Wisconsin_COVID19 VALUES (63, 'Trempealeau County', 17, 10030, 0, 76, 11, 56);
+INSERT INTO Wisconsin_COVID19 VALUES (64, 'Vernon County', 6, 7733, 0, 120, 4, 40);
+INSERT INTO Wisconsin_COVID19 VALUES (65, 'Vilas County', 12, 6548, 0, 108, 13, 114);
+INSERT INTO Wisconsin_COVID19 VALUES (66, 'Walworth County', 58, 33617, 0, 313, 30, 408);
+INSERT INTO Wisconsin_COVID19 VALUES (67, 'Washburn County', 9, 5068, 0, 53, 2, 57);
+INSERT INTO Wisconsin_COVID19 VALUES (68, 'Washington County', 72, 47194, 0, 371, 45, 480);
+INSERT INTO Wisconsin_COVID19 VALUES (69, 'Waukesha County', 230, 140733, 3, 1256, 172, 1339);
+INSERT INTO Wisconsin_COVID19 VALUES (70, 'Waupaca County', 30, 16474, 0, 266, 18, 181);
+INSERT INTO Wisconsin_COVID19 VALUES (71, 'Waushara County', 8, 7685, 0, 94, 7, 91);
+INSERT INTO Wisconsin_COVID19 VALUES (72, 'Winnebago County', 159, 64426, 0, 419, 48, 545);
+INSERT INTO Wisconsin_COVID19 VALUES (73, 'Wood County', 66, 27307, 0, 269, 83, 564);
+
+--What is the total # of positive COVID-19 tests in Wisconsin in the last 7 days?
+
+SELECT SUM(Total_Positive_Tests_Last_7_Days) 
+FROM Wisconsin_COVID19;
+
+
+--What percent of tests taken in the past 7 days are positive in each county?
+
+SELECT County, Total_Positive_Tests_Last_7_Days, Total_Tests_Last_7_Days 
+FROM Wisconsin_COVID19;
+
+
+SELECT County, ROUND(Total_Positive_Tests_Last_7_Days/Total_Tests_Last_7_Days*100, 2) 
+AS Rate_COVID 
+FROM Wisconsin_COVID19
+ORDER by Rate_COVID ASC;
+
+--Which 3 counties have the most of COVID-19 cases and deaths in the last 7 days?
+
+SELECT County, Cases_Last_7_Days, Deaths_Last_7_Days 
+FROM Wisconsin_COVID19
+ORDER BY Cases_Last_7_Days DESC
+LIMIT 3;
