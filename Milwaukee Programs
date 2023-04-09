@@ -1,0 +1,27 @@
+--Milwaukee Programs
+
+--Create a programs table
+CREATE TABLE Programs (id INTEGER PRIMARY KEY AUTOINCREMENT, Program TEXT, Service TEXT, Requirements TEXT);
+
+INSERT INTO Programs VALUES (1, 'DAD Project', 'Parental support for fathers', 'Teens/adults who identify as male & are expecting fathers & fathers with a child up to 3 years old');
+INSERT INTO Programs VALUES (2, 'Tuberculosis Prevention & Care Program', 'Controls & treats tuberculosis', 'Referall from MD or health department');
+INSERT INTO Programs VALUES (3, 'Birth Outcomes Made Better (BOMB) Doula Program', 'Supports healthy pregnancies & nurtures healthy babies', 'Mothers at or before 30 weeks pregnant through birth & 12 weeks postpartum');
+INSERT INTO Programs VALUES (4, 'STI & HIV Program', 'Education & confidential testing & follow-up services to uninsured & under-insured people', 'Resident of Milwaukee or surrounding community');
+
+
+--Create a program inquiry table
+CREATE TABLE Program_Inquiry (id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Phone INTEGER, Email INTEGER, Program_id INTEGER);
+
+INSERT INTO Program_Inquiry VALUES (1, 'Abby Smith', 4148674430, 'asmith@email.com', 4);
+INSERT INTO Program_Inquiry VALUES (2, 'Dennis Jones', 4147339890, 'djones@email.com', 1);
+INSERT INTO Program_Inquiry VALUES (3, 'Tom Baker', 4143225657, 'bakert@email.com', 4);
+INSERT INTO Program_Inquiry VALUES (4, 'Halie Martinez', 4144567899, 'haliem@email.com', 3);
+INSERT INTO Program_Inquiry VALUES (5, 'Jack Martin', 4143220098, 'martinj@email.com', 2);
+
+
+--Create a readable list of names and the programs they inquired about
+
+SELECT Program_Inquiry.Name, Programs.Program
+FROM Program_Inquiry
+JOIN Programs
+ON Program_Inquiry.program_id=programs.id;
