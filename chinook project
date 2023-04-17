@@ -1,0 +1,38 @@
+#In this SQL code, I'm querying a database that contains data from a digital media store that I used to answer questions about the data.
+
+--Show customers who are not in the US
+SELECT FirstName, LastName, CustomerID, Country
+FROM chinook.customers
+WHERE Country <> 'USA';
+
+--Only show customers from Brazil
+SELECT FirstName, LastName, CustomerID
+FROM chinook.customers
+WHERE Country = 'Brazil';
+
+--Find invoices of customers who are from Brazil
+SELECT Firstname, LastName, InvoiceID, BillingCountry
+FROM chinook.customers cust
+LEFT JOIN chinook.invoices inv
+ON cust.CustomerID = inv.CustomerID
+WHERE Country = 'Brazil';
+
+--Show employees who are Sales Agents
+SELECT FirstName, LastName
+FROM chinook.employees
+WHERE Title = 'Sales Support Agent';
+
+
+--Find a unique list of billing countries
+SELECT DISTINCT BillingCountry
+FROM chinook.invoices;
+
+--How many invoices were there in 2009?
+SELECT COUNT(InvoiceID) AS total_invoices
+FROM chinook.invoices
+WHERE InvoiceDate LIKE '2009%';
+
+--What are the total sales for 2009?
+SELECT SUM(Total)
+FROM chinook.invoices
+WHERE InvoiceDate LIKE '2009%';
