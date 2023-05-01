@@ -1,0 +1,28 @@
+--In this SQL, I'm querying a database with multiple tables in it to quantify statistics about salaries in San Fransico.
+
+--What is the average overtime pay?
+
+SELECT AVG(OvertimePay)
+FROM Salaries;
+
+
+--Which job receives the highest base pay and how much is it?
+
+SELECT DISTINCT JobTitle, BasePay
+FROM Salaries
+WHERE BasePay IS NOT NULL
+AND BasePay <> ''
+AND BasePay <> 'Not Provided'
+ORDER BY BasePay DESC
+LIMIT 1;
+
+
+--What are the 5 highest paying jobs? 
+
+SELECT DISTINCT JobTitle
+FROM Salaries
+WHERE TotalPay IS NOT NULL
+AND BasePay <> ''
+AND BasePay <> 'Not Provided'
+ORDER BY TotalPay DESC
+LIMIT 5;
